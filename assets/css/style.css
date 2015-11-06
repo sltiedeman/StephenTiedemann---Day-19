@@ -1,0 +1,246 @@
+/* line 1, ../compass/sass/style.scss */
+#navbar {
+  position: relative;
+  background-color: #242424;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+  line-height: 60px;
+}
+
+/* line 12, ../compass/sass/style.scss */
+#navbar ul {
+  text-align: center;
+}
+
+/* line 16, ../compass/sass/style.scss */
+#navbar li {
+  display: inline-block;
+  padding: 0px 60px;
+}
+
+/* line 21, ../compass/sass/style.scss */
+#navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 1s;
+  color: white !important;
+}
+
+/* line 32, ../compass/sass/style.scss */
+#navbar a:hover {
+  color: #ffdb99 !important;
+}
+
+/* line 36, ../compass/sass/style.scss */
+.navbar-scrolled {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+  padding-bottom: 12px;
+  display: none;
+  opacity: .98;
+  background: linear-gradient(#242424, transparent 95%), linear-gradient(0deg, #aeaeae, transparent);
+}
+
+/* line 48, ../compass/sass/style.scss */
+#main {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 40px;
+}
+/* line 52, ../compass/sass/style.scss */
+#main #about-us {
+  font-weight: 300;
+}
+/* line 54, ../compass/sass/style.scss */
+#main #about-us #something-sweet {
+  background: white;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+/* line 61, ../compass/sass/style.scss */
+#main #about-us #photos #cat, #main #about-us #photos #stephen, #main #about-us #photos #dog {
+  width: 33.33333%;
+  float: left;
+  text-align: center;
+  opacity: 0.5;
+}
+/* line 66, ../compass/sass/style.scss */
+#main #about-us #photos #cat img, #main #about-us #photos #stephen img, #main #about-us #photos #dog img {
+  max-width: 80%;
+  border-radius: 50%;
+}
+/* line 71, ../compass/sass/style.scss */
+#main #about-us #photos #cat:hover, #main #about-us #photos #stephen:hover, #main #about-us #photos #dog:hover {
+  opacity: 1.0;
+  cursor: pointer;
+  transition: all 1s;
+}
+/* line 78, ../compass/sass/style.scss */
+#main #about-us #photo-titles #cat2, #main #about-us #photo-titles #stephen2, #main #about-us #photo-titles #dog2 {
+  overflow: hidden;
+  margin-top: 10px;
+  width: 33.33333%;
+  float: left;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+/* line 89, ../compass/sass/style.scss */
+#main #about-us #descriptions {
+  clear: both;
+  margin-bottom: 20px;
+  height: 170px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+/* line 96, ../compass/sass/style.scss */
+#main #about-us #descriptions #header-holder {
+  height: 20px;
+}
+/* line 99, ../compass/sass/style.scss */
+#main #about-us #descriptions .cat-description {
+  display: none;
+}
+/* line 102, ../compass/sass/style.scss */
+#main #about-us #descriptions .stephen-description {
+  display: none;
+}
+/* line 105, ../compass/sass/style.scss */
+#main #about-us #descriptions .dog-description {
+  display: none;
+}
+
+/* line 113, ../compass/sass/style.scss */
+#skills {
+  background: white;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 118, ../compass/sass/style.scss */
+#skills #progress-title {
+  margin-left: 10%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+/* line 123, ../compass/sass/style.scss */
+#skills #something-sweet2 {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+  float: left;
+}
+/* line 130, ../compass/sass/style.scss */
+#skills #filler {
+  clear: both;
+}
+/* line 134, ../compass/sass/style.scss */
+#skills .progress-bar-title {
+  margin-left: 20%;
+  width: 30%;
+  float: left;
+  font-size: 12px;
+}
+/* line 141, ../compass/sass/style.scss */
+#skills .progress-bar-percent {
+  margin-right: 20%;
+  width: 30%;
+  text-align: right;
+  float: left;
+  font-size: 12px;
+}
+/* line 149, ../compass/sass/style.scss */
+#skills #progress {
+  width: 60%;
+  margin-left: 20%;
+}
+/* line 153, ../compass/sass/style.scss */
+#skills .progress {
+  background: whitesmoke;
+  border: 9px solid whitesmoke;
+  border-radius: 4px;
+  height: 20px;
+}
+/* line 158, ../compass/sass/style.scss */
+#skills .progress .progress-bar {
+  background: orange;
+}
+
+/* line 165, ../compass/sass/style.scss */
+.margin-adjust {
+  margin-top: 60px;
+}
+
+/* line 171, ../compass/sass/style.scss */
+#contact-me {
+  background: #f1f1f1;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* line 176, ../compass/sass/style.scss */
+#contact-me #contact-title {
+  margin-left: 10%;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+/* line 181, ../compass/sass/style.scss */
+#contact-me #something-sweet3 {
+  background: white;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 10%;
+}
+
+/* line 194, ../compass/sass/style.scss */
+footer {
+  height: 60px;
+  background-color: #dcdcdc;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  line-height: 60px;
+  font-weight: 300;
+  font-size: 12px;
+}
+/* line 202, ../compass/sass/style.scss */
+footer #footer-text-container {
+  width: 60%;
+  float: left;
+}
+/* line 205, ../compass/sass/style.scss */
+footer #footer-text-container #footer1, footer #footer-text-container #footer2, footer #footer-text-container #footer3 {
+  display: inline-block;
+  margin-left: 5%;
+}
+/* line 210, ../compass/sass/style.scss */
+footer #fonticon-container {
+  width: 35%;
+  float: left;
+  text-align: right;
+  margin-right: 5%;
+}
+/* line 215, ../compass/sass/style.scss */
+footer #fonticon-container .fonticon {
+  width: 50px;
+  line-height: 60px;
+  display: inline-block;
+}
+/* line 219, ../compass/sass/style.scss */
+footer #fonticon-container .fonticon img {
+  width: 24px;
+  opacity: 0.6;
+}
+/* line 223, ../compass/sass/style.scss */
+footer #fonticon-container .fonticon img:hover {
+  opacity: 1.0;
+}
