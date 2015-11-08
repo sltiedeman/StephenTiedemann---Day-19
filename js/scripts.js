@@ -1,6 +1,8 @@
 
 
 $(document).ready(function(){
+	 
+ 
     new WOW().init();
 
 
@@ -45,17 +47,23 @@ $(document).ready(function(){
 	// });
 
 	$(window).scroll(function(){
-		console.log($(this).scrollTop());
 		if( $(this).scrollTop() > headerHeight){
 			mainNav.addClass(mainNavScroll);
 			$('#main').addClass('margin-adjust');
-			var inserthtml ='<ul><li class="active"><a href="javascript:void(0)">Home</a></li>';
-			inserthtml+='<li><a href="#about-us">About</a</li>';
-			inserthtml+='<li><a href="#">Projects</a></li>';
-			inserthtml+='<li><a href="#">Contact</a></li>';
-			inserthtml+='</ul>';
+			var inserthtml ='<div id="nav-text"><ul><li class="active fade-text"><a href="javascript:void(0)">Home</a></li>';
+			inserthtml+='<li class="fade-text"><a href="#about-us">About</a</li>';
+			inserthtml+='<li class="fade-text"><a href="#">Projects</a></li>';
+			inserthtml+='<li class="fade-text"><a href="#contact-me">Contact</a></li>';
+			inserthtml+='</ul></div>';
 			$('.navbar-scrolled').html(inserthtml);
-			$('.navbar-scrolled').fadeIn(1000);
+			$('#navbar a').css('display', 'block');
+
+	
+
+
+			// $('.navbar-scrolled').fadeIn(1000);
+			// $(mainNav).html(inserthtml);
+
 		}else{
 			// $('.navbar-scrolled').fadeOut(1000);
 			// $(mainNav).html("");
@@ -98,5 +106,62 @@ $(document).ready(function(){
 
 	})
 
+
+	// Code for animating progress bar on scroll----------
+
+	var mainNav2 = $('');
+	var mainNavScroll2 = 'navbar-scrolled';
+	var pageHeight = $('#myCarousel').height() + $('#navbar').height();
+	pageHeight += ($('#main').height())/2;
+
+
+	// $('#nav-bar li a').click(function(){
+	// 	$('.active').removeClass('active');
+	// 	$(this).addClass('active');
+
+	// });
+
+	$(window).scroll(function(){
+		if( $(this).scrollTop() > pageHeight){
+			$('#bar1').css('width', '90%');
+			$('#bar2').css('width', '80%');
+			$('#bar3').css('width', '75%');
+			$('#bar4').css('width', '60%');
+			$('#bar5').css('width', '100%');
+
+			
+		}
+	});
+
+
+	$('#contact-me-form').submit(function(){
+		if(contactMeForm.name.value.length < 4){
+	        contactMeForm.message.focus();
+	        document.getElementById('name-wrapper').className = 'form-group has-error';
+	        document.getElementById("name-error").className = 'help-block';
+	        document.getElementById("name-error").innerHTML = "You need at least 4 characters";
+	        return false;
+	    }else{
+	    	document.getElementById("name-error").innerHTML = "";
+	    }
+
+	    if(contactMeForm.message.value.length < 10){
+	        contactMeForm.message.focus();
+	        document.getElementById('message-wrapper').className = 'form-group has-error';
+	        document.getElementById("message-error").className = 'help-block';
+	        document.getElementById("message-error").innerHTML = "You need at least 10 characters";
+	        return false;
+	    }else{
+	    	document.getElementById("message-error").innerHTML ="";
+	    }
+	    
+	});
+
+
+
 	
 })
+
+
+
+

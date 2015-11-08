@@ -7,12 +7,18 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="bootstrapslider/css/full-slider.css">
     <link rel="stylesheet" href="assets/css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Raleway:300,400,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:200, 300,400,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/animate.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/bootstrap.js"></script>
     <script src="js/wow.js"></script>
+    <script src="js/flip.js"></script>
 	<script src="js/scripts.js"></script>
+
+    
+
 </head>
 <body>
 	    <!-- Full Page Image Background Carousel Header -->
@@ -63,11 +69,11 @@
 
 
     <div class="pageheading" id="name">
-    	<h1 class="animated fadeInDown">Stephen Tiedemann</h1>
-    	<h2 class="animated fadeInUp">Web Developer</h2>
+    	<h1 class="animated fadeInDown">STEPHEN TIEDEMANN</h1>
+    	<h2 id="web-developer" class="animated fadeInUp">WEB DEVELOPER</h2>
     </div>
     <div class="pageheading" id="comment">
-    	<h1>Builder of Things</h1>
+    	<h1>BUILDER OF THINGS</h1>
     </div>
 
     <div id="navbar">
@@ -75,37 +81,39 @@
     </div>
 
     <div class="margin-adjust" id="main">
-        <div id="about-us" class="wow fadeInLeft">
+        <div id="about-us">
             <h2>ABOUT US</h2>
-            <div id="something-sweet">
-                SOMETHING SWEET AND SIMPLE ABOUT US
+            <div class="line">
+            </div>
+            <div id="something-sweet" class="wow fadeInLeft">
+                SOMETHING SWEET AND SIMPLE - CLICK FOR INSPIRATION
             </div>
             <div id="photos">
-                <div id="cat" class="wow bounceInUp" data-wow-duration="2s">
-                    <img src="img/cat.jpg">
+                <div id="cat" class="wow slideInUp" data-wow-duration="2s">
+                    <img src="img/cat3.jpg">
                 </div>
-                <div id="stephen" class="wow bounceInDown" data-wow-duration="2s">
+                <div id="stephen" class="wow slideInUp" data-wow-duration="2s">
                     <img src="img/stephen.jpg">
                 </div>
-                <div id="dog" class="wow bounceInUp" data-wow-duration="2s">
+                <div id="dog" class="wow slideInUp" data-wow-duration="2s">
                     <img src="img/dog.jpg">
                 </div>
             </div>
             <div id="photo-titles">
                 <div id="cat2">
-                    Solomon - HR
+                    SOLOMON - HR
                 </div>
                 <div id="stephen2">
-                    Stephen - Developer
+                    STEPHEN - DEVELOPER
                 </div>
                 <div id="dog2">
-                    Bentley - Security
+                    BENTLEY - SECURITY
                 </div>
             </div>
             <div id="descriptions">
-                <div id="header-holder">
-                  <h4 id="click-for-description"> Click Above for Description</h4>
-                </div>
+                <!-- <div id="header-holder">
+                  <h4 id="click-for-description">Click a Pic to Learn Something Semi-Interesting</h4>
+                </div> -->
                 <div class="cat-description">
                     Solomon is the longest member on staff.  He has been head of HR for just over six years, 
                     which happens to be the majority of his life.  His daily responsibilities revolve around an
@@ -126,9 +134,11 @@
          </div>
     </div>
      <div id="skills">
-         <div id="progress-title">
+         <!-- <div id="progress-title"> -->
             <h2>SKILL PROGRESS</h2>
-         </div>
+         <!-- </div> -->
+         <div class="line">
+        </div>
          <div id="something-sweet2" class="wow fadeInLeft">
             WHAT I THINK I MAY KNOW
          </div>
@@ -137,7 +147,7 @@
          <div class="progress-bar-title">HTML</div>
          <div class="progress-bar-percent">90%</div>
          <div id="progress" class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+            <div class="progress-bar" id="bar1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <span>90% Complete</span>
             </div>
          </div>
@@ -145,15 +155,15 @@
          <div class="progress-bar-title">CSS</div>
          <div class="progress-bar-percent">80%</div>
          <div id="progress" class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+            <div class="progress-bar" id="bar2" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <span>80% Complete</span>
             </div>
          </div>
 
          <div class="progress-bar-title">JavaScript</div>
-         <div class="progress-bar-percent">80%</div>
+         <div class="progress-bar-percent">75%</div>
          <div id="progress" class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:65%">
+            <div class="progress-bar" id="bar3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <span>65% Complete</span>
             </div>
          </div>
@@ -161,7 +171,7 @@
          <div class="progress-bar-title">JQuery</div>
          <div class="progress-bar-percent">60%</div>
          <div id="progress" class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+            <div class="progress-bar" id="bar4" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <span>80% Complete</span>
             </div>
          </div>
@@ -169,19 +179,55 @@
           <div class="progress-bar-title">Having Fun</div>
          <div class="progress-bar-percent">100%</div>
          <div id="progress" class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            <div class="progress-bar" id="bar5" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                 <span>100% Complete</span>
             </div>
          </div>
     </div>
 
     <div id="contact-me">
-        <div id="contact-title">
             <h2>CONTACT ME</h2>
-         </div>
+         <div class="line">
+        </div>
          <div id="something-sweet3" class="wow fadeInLeft">
             REACH OUT AND TELL ME SOMETHING AWESOME
          </div>
+
+         <form id="contact-me-form" name="contactMeForm">
+            <div id="left">
+                <div class="form-group wow slideInUp" id="name-wrapper">
+                    <label class="labels" for="names">
+                        <input name="name" type="text" class="form-control" placeholder="Name..." id="names">
+                        <span id="name-error" class="error-text"></span>
+                    </label>
+                </div>
+                <div class="form-group wow slideInUp">
+                    <label class="labels" for="email">
+                        <input type="email" class="form-control" placeholder="Email..." id="email">
+                        <span class="error" style="display: none;">Email Field Required</span>
+                    </label>
+                </div>
+                <div class="form-group wow slideInUp">
+                    <label class="labels" for="phone">
+                        <input type="tel" class="form-control" placeholder="Telephone..." id="phone">
+                    </label>
+                </div>
+                    
+            </div>
+            <div id="right">
+                <div class="form-group wow slideInUp" id="message-wrapper">
+                    <label class="labels" for="message" id="messageIN">
+                        <textarea name="message" class="form-control" id="message" placeholder="Message..."></textarea>
+                        <span id="message-error" class="error-text"></span>
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-default wow slideInUp">Submit</button>
+
+        </form>
+
+
+
     </div>
 
     <footer>
@@ -203,7 +249,7 @@
                 </a>
             </div>
             <div class="fonticon">
-                <a href="https://github.com/sltiedeman/portfolio">
+                <a href="https://github.com/sltiedeman/">
                     <img src="img/Github.png">
                 </a>
             </div>
@@ -215,7 +261,6 @@
         </div>
     </footer>
 
-
-
+ 
 </body>
 </html>

@@ -7,8 +7,8 @@
 html,
 body {
     height: 100%;
-    background: #f1f1f1;
-
+/*    background: #f1f1f1;
+*/
 }
 
 
@@ -25,7 +25,8 @@ body {
 
 .pageheading{
     z-index: 100;
-    color: #ffe6b9;
+    /*color: #ec9400;*/
+    color: white;
     width: 100%;
     top: 36%;
     text-align: center;
@@ -46,8 +47,15 @@ body {
 
 
 h1{
-    font-size: 80px;
-    font-weight: 800;
+    font-size: 48px;
+    font-weight: 400;
+    text-shadow: 3px 1px 13px rgba(150, 150, 150, 1);
+}
+
+#web-developer{
+    color: white;
+    font-weight: 400;
+    text-shadow: 3px 1px 13px rgba(150, 150, 150, 1);
 }
 
 #comment{
