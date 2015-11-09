@@ -105,12 +105,14 @@
         #descriptions{
             clear: both;
             margin-bottom: 20px;
-            height: 170px;
+            // height: 170px;
+            height: 0px;
             width: 60%;
             margin: auto;
             text-align: center;
             font-family: 'Crimson Text', sans-serif;
             font-style: italic;
+            transition: height 1s;
             // #header-holder{
             //     height: 20px;
             // }
@@ -206,14 +208,37 @@
    
 }
 
+#pano-image{
+    background-image: url('../../img/iceland5.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+    #pano-text{
+        position: absolute;
+        margin: auto;
+        width: 60%;
+        text-align: center;
+        font-family: 'Crimson Text', sans-serif;
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 2px;
+        top: 156px;
+        left: 20%;
+        border-top: 1px solid orange;
+        border-bottom: 1px solid orange;
+        padding: 15px 0 15px 0;
+    }
+}
 
 #contact-me{
     background: white;
     width: 100%;
-    padding: 20px 10% 20px 10%;
-    // padding-top: 20px;
-    // padding-bottom: 20px;
-    // padding-left: 10%;
+    padding: 20px 10% 0px 10%;
     overflow: hidden;
     margin-bottom: 40px;
     #contact-title{
@@ -302,7 +327,7 @@
             padding-left: 10px;
             border-radius: 0px;
             box-shadow: none;
-            margin-top: 40px;
+            margin-top: 20px;
             text-align: center;
             letter-spacing: 6px;
             height: 40px;
@@ -353,7 +378,7 @@
 
 
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: 789px) {
     footer{
         #footer-text-container{
             float: none;
@@ -372,7 +397,6 @@
     }
     #main #about-us #descriptions {
         width: 75%;
-        height: 190px;
     }
     #navbar li{
         padding: 0px 30px;
@@ -394,6 +418,13 @@
         width: 70%;
         margin-left: 15%;
     }
+    #pano-image{
+        #pano-text{
+            // height: 116px;
+            top: 142px;
+
+        }
+    }
 
 
     
@@ -413,6 +444,15 @@
         }
 
     }
+    #pano-image{
+        #pano-text{
+            font-size: 16px;
+            top: 151px;
+            padding: 15px;
+
+        }
+    }
+
     #contact-me form #left{
         width: 80%;
         margin: auto;

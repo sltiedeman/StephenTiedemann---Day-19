@@ -107,62 +107,63 @@
 #main #about-us #descriptions {
   clear: both;
   margin-bottom: 20px;
-  height: 170px;
+  height: 0px;
   width: 60%;
   margin: auto;
   text-align: center;
   font-family: 'Crimson Text', sans-serif;
   font-style: italic;
+  transition: height 1s;
 }
-/* line 117, ../compass/sass/style.scss */
+/* line 119, ../compass/sass/style.scss */
 #main #about-us #descriptions .cat-description {
   display: none;
 }
-/* line 120, ../compass/sass/style.scss */
+/* line 122, ../compass/sass/style.scss */
 #main #about-us #descriptions .stephen-description {
   display: none;
 }
-/* line 123, ../compass/sass/style.scss */
+/* line 125, ../compass/sass/style.scss */
 #main #about-us #descriptions .dog-description {
   display: none;
 }
 
-/* line 130, ../compass/sass/style.scss */
+/* line 132, ../compass/sass/style.scss */
 #skills-wrapper {
   background: #f1f1f1;
   width: 100%;
 }
-/* line 133, ../compass/sass/style.scss */
+/* line 135, ../compass/sass/style.scss */
 #skills-wrapper #skills {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: auto;
   width: 80%;
 }
-/* line 138, ../compass/sass/style.scss */
+/* line 140, ../compass/sass/style.scss */
 #skills-wrapper #skills #progress-title {
   font-weight: 300;
   margin-bottom: 20px;
 }
-/* line 142, ../compass/sass/style.scss */
+/* line 144, ../compass/sass/style.scss */
 #skills-wrapper #skills #something-sweet2 {
   background: white;
   padding: 10px;
   margin-bottom: 20px;
   float: left;
 }
-/* line 148, ../compass/sass/style.scss */
+/* line 150, ../compass/sass/style.scss */
 #skills-wrapper #skills #filler {
   clear: both;
 }
-/* line 152, ../compass/sass/style.scss */
+/* line 154, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress-bar-title {
   margin-left: 10%;
   width: 40%;
   float: left;
   font-size: 12px;
 }
-/* line 159, ../compass/sass/style.scss */
+/* line 161, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress-bar-percent {
   margin-right: 10%;
   width: 40%;
@@ -170,83 +171,111 @@
   float: left;
   font-size: 12px;
 }
-/* line 167, ../compass/sass/style.scss */
+/* line 169, ../compass/sass/style.scss */
 #skills-wrapper #skills #progress {
   width: 80%;
   margin-left: 10%;
 }
-/* line 171, ../compass/sass/style.scss */
+/* line 173, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress {
   background: whitesmoke;
   border: 9px solid whitesmoke;
   border-radius: 4px;
   height: 20px;
 }
-/* line 176, ../compass/sass/style.scss */
+/* line 178, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress .progress-bar {
   background: orange;
 }
-/* line 179, ../compass/sass/style.scss */
+/* line 181, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress #bar1 {
   width: 0%;
   transition: all 3s;
 }
-/* line 183, ../compass/sass/style.scss */
+/* line 185, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress #bar2 {
   width: 0%;
   transition: all 3s;
 }
-/* line 187, ../compass/sass/style.scss */
+/* line 189, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress #bar3 {
   width: 0%;
   transition: all 3s;
 }
-/* line 191, ../compass/sass/style.scss */
+/* line 193, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress #bar4 {
   width: 0%;
   transition: all 3s;
 }
-/* line 195, ../compass/sass/style.scss */
+/* line 197, ../compass/sass/style.scss */
 #skills-wrapper #skills .progress #bar5 {
   width: 0%;
   transition: all 3s;
 }
 
-/* line 204, ../compass/sass/style.scss */
+/* line 206, ../compass/sass/style.scss */
 .margin-adjust {
   margin-top: 60px;
 }
 
-/* line 210, ../compass/sass/style.scss */
+/* line 211, ../compass/sass/style.scss */
+#pano-image {
+  background-image: url("../../img/iceland5.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+/* line 220, ../compass/sass/style.scss */
+#pano-image #pano-text {
+  position: absolute;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  font-family: 'Crimson Text', sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 2px;
+  top: 156px;
+  left: 20%;
+  border-top: 1px solid orange;
+  border-bottom: 1px solid orange;
+  padding: 15px 0 15px 0;
+}
+
+/* line 238, ../compass/sass/style.scss */
 #contact-me {
   background: white;
   width: 100%;
-  padding: 20px 10% 20px 10%;
+  padding: 20px 10% 0px 10%;
   overflow: hidden;
   margin-bottom: 40px;
 }
-/* line 219, ../compass/sass/style.scss */
+/* line 244, ../compass/sass/style.scss */
 #contact-me #contact-title {
   font-weight: 300;
   margin-bottom: 20px;
 }
-/* line 224, ../compass/sass/style.scss */
+/* line 249, ../compass/sass/style.scss */
 #contact-me #something-sweet3 {
   background: #f1f1f1;
   display: inline-block;
   padding: 10px;
   margin-bottom: 20px;
 }
-/* line 232, ../compass/sass/style.scss */
+/* line 257, ../compass/sass/style.scss */
 #contact-me form #left {
   float: left;
   width: 48.5%;
 }
-/* line 235, ../compass/sass/style.scss */
+/* line 260, ../compass/sass/style.scss */
 #contact-me form #left .labels {
   width: 100%;
 }
-/* line 237, ../compass/sass/style.scss */
+/* line 262, ../compass/sass/style.scss */
 #contact-me form #left .labels .form-control {
   width: 100%;
   background: transparent;
@@ -264,24 +293,24 @@
   border-radius: 0px;
   box-shadow: none;
 }
-/* line 254, ../compass/sass/style.scss */
+/* line 279, ../compass/sass/style.scss */
 #contact-me form #left .labels .help-block {
   color: #a94442;
   font-size: 14px;
   font-family: 'Inconsolata', sans-serif;
   font-weight: 400;
 }
-/* line 262, ../compass/sass/style.scss */
+/* line 287, ../compass/sass/style.scss */
 #contact-me form #right {
   float: left;
   width: 48.5%;
   margin-left: 3%;
 }
-/* line 266, ../compass/sass/style.scss */
+/* line 291, ../compass/sass/style.scss */
 #contact-me form #right .labels {
   width: 100%;
 }
-/* line 268, ../compass/sass/style.scss */
+/* line 293, ../compass/sass/style.scss */
 #contact-me form #right .labels .form-control {
   background: transparent;
   border: 0;
@@ -298,14 +327,14 @@
   box-shadow: none;
   height: 220px;
 }
-/* line 284, ../compass/sass/style.scss */
+/* line 309, ../compass/sass/style.scss */
 #contact-me form #right .labels .help-block {
   color: #a94442;
   font-size: 14px;
   font-family: 'Inconsolata', sans-serif;
   font-weight: 400;
 }
-/* line 292, ../compass/sass/style.scss */
+/* line 317, ../compass/sass/style.scss */
 #contact-me form button {
   width: 100%;
   background: transparent;
@@ -319,13 +348,13 @@
   padding-left: 10px;
   border-radius: 0px;
   box-shadow: none;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   letter-spacing: 6px;
   height: 40px;
 }
 
-/* line 316, ../compass/sass/style.scss */
+/* line 341, ../compass/sass/style.scss */
 footer {
   height: 60px;
   background-color: #dcdcdc;
@@ -335,95 +364,99 @@ footer {
   font-weight: 300;
   font-size: 12px;
 }
-/* line 324, ../compass/sass/style.scss */
+/* line 349, ../compass/sass/style.scss */
 footer #footer-text-container {
   width: 75%;
   float: left;
 }
-/* line 327, ../compass/sass/style.scss */
+/* line 352, ../compass/sass/style.scss */
 footer #footer-text-container #footer1, footer #footer-text-container #footer2, footer #footer-text-container #footer3 {
   display: inline-block;
   margin-left: 5%;
 }
-/* line 332, ../compass/sass/style.scss */
+/* line 357, ../compass/sass/style.scss */
 footer #fonticon-container {
   width: 20%;
   float: left;
   text-align: right;
   margin-right: 5%;
 }
-/* line 337, ../compass/sass/style.scss */
+/* line 362, ../compass/sass/style.scss */
 footer #fonticon-container .fonticon {
   width: 50px;
   line-height: 60px;
   display: inline-block;
 }
-/* line 341, ../compass/sass/style.scss */
+/* line 366, ../compass/sass/style.scss */
 footer #fonticon-container .fonticon img {
   width: 24px;
   opacity: 0.6;
 }
-/* line 345, ../compass/sass/style.scss */
+/* line 370, ../compass/sass/style.scss */
 footer #fonticon-container .fonticon img:hover {
   opacity: 1.0;
 }
 
-@media screen and (max-width: 785px) {
-  /* line 358, ../compass/sass/style.scss */
+@media screen and (max-width: 789px) {
+  /* line 383, ../compass/sass/style.scss */
   footer #footer-text-container {
     float: none;
     width: 100%;
     text-align: center;
     margin: 0px;
   }
-  /* line 363, ../compass/sass/style.scss */
+  /* line 388, ../compass/sass/style.scss */
   footer #footer-text-container #footer1, footer #footer-text-container #footer2, footer #footer-text-container #footer3 {
     margin: 0px 2.5% 0 2.5%;
   }
-  /* line 367, ../compass/sass/style.scss */
+  /* line 392, ../compass/sass/style.scss */
   footer #fonticon-container {
     float: none;
     width: 100%;
     text-align: center;
   }
 
-  /* line 373, ../compass/sass/style.scss */
+  /* line 398, ../compass/sass/style.scss */
   #main #about-us #descriptions {
     width: 75%;
-    height: 190px;
   }
 
-  /* line 377, ../compass/sass/style.scss */
+  /* line 401, ../compass/sass/style.scss */
   #navbar li {
     padding: 0px 30px;
   }
 
-  /* line 380, ../compass/sass/style.scss */
+  /* line 404, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 70%;
     margin: auto;
     float: none;
   }
 
-  /* line 385, ../compass/sass/style.scss */
+  /* line 409, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 70%;
   }
-  /* line 389, ../compass/sass/style.scss */
+  /* line 413, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 393, ../compass/sass/style.scss */
+  /* line 417, ../compass/sass/style.scss */
   #contact-me form button {
     width: 70%;
     margin-left: 15%;
   }
+
+  /* line 422, ../compass/sass/style.scss */
+  #pano-image #pano-text {
+    top: 142px;
+  }
 }
 @media screen and (max-width: 575px) {
-  /* line 406, ../compass/sass/style.scss */
+  /* line 437, ../compass/sass/style.scss */
   footer #footer-text-container #footer3 {
     display: block;
     background-color: #dcdcdc;
@@ -431,38 +464,45 @@ footer #fonticon-container .fonticon img:hover {
     margin: 0px;
   }
 
-  /* line 416, ../compass/sass/style.scss */
+  /* line 448, ../compass/sass/style.scss */
+  #pano-image #pano-text {
+    font-size: 16px;
+    top: 151px;
+    padding: 15px;
+  }
+
+  /* line 456, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 80%;
     margin: auto;
     float: none;
   }
 
-  /* line 421, ../compass/sass/style.scss */
+  /* line 461, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 80%;
   }
-  /* line 425, ../compass/sass/style.scss */
+  /* line 465, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 429, ../compass/sass/style.scss */
+  /* line 469, ../compass/sass/style.scss */
   #contact-me form button {
     width: 80%;
     margin-left: 10%;
   }
 }
 @media screen and (max-width: 534px) {
-  /* line 438, ../compass/sass/style.scss */
+  /* line 478, ../compass/sass/style.scss */
   #main #about-us #descriptions {
     width: 85%;
     height: 190px;
   }
 
-  /* line 442, ../compass/sass/style.scss */
+  /* line 482, ../compass/sass/style.scss */
   #navbar li {
     padding: 0px 15px;
   }

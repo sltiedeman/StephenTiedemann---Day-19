@@ -70,6 +70,8 @@ $(document).ready(function(){
 		$('.stephen-description').css('display', 'none');
 		$('.dog-description').css('display', 'none');
 		$('.cat-description').fadeIn(1500);
+		var height = $('.cat-description').height()+40;
+		$('#descriptions').css('height', height);
 		$('#cat').css('opacity', "1.0");
 		$('#dog').css('opacity', "0.5");
 		$('#stephen').css('opacity', "0.5");
@@ -82,6 +84,8 @@ $(document).ready(function(){
 		$('.cat-description').css('display', 'none');
 		$('.dog-description').css('display', 'none');
 		$('.stephen-description').fadeIn(1500);
+		var height = $('.stephen-description').height()+40;
+		$('#descriptions').css('height', height);
 		$('#cat').css('opacity', "0.5");
 		$('#dog').css('opacity', "0.5");
 		$('#stephen').css('opacity', "1.0");
@@ -92,6 +96,8 @@ $(document).ready(function(){
 		$('.cat-description').css('display', 'none');
 		$('.stephen-description').css('display', 'none');
 		$('.dog-description').fadeIn(1500);
+		var height= $('.dog-description').height()+40;
+		$('#descriptions').css('height', height);
 		$('#cat').css('opacity', "0.5");
 		$('#dog').css('opacity', "1.0");
 		$('#stephen').css('opacity', "0.5");
