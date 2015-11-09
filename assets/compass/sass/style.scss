@@ -250,8 +250,11 @@
                     border-radius: 0px;
                     box-shadow: none;
                 }
-                .has-error{
-                    color: green;
+                .help-block{
+                    color: #a94442;
+                    font-size: 14px;
+                    font-family: 'Inconsolata', sans-serif;
+                    font-weight: 400;
                 }
             }
         }
@@ -318,7 +321,7 @@
         font-weight: 300;
         font-size: 12px;
         #footer-text-container{
-            width: 60%;
+            width: 75%;
             float: left;
             #footer1, #footer2, #footer3{
                 display: inline-block;
@@ -326,7 +329,7 @@
             }
         }
         #fonticon-container{
-            width: 35%;
+            width: 20%;
             float: left;
             text-align: right;
             margin-right: 5%;
@@ -346,8 +349,60 @@
         
     }
 
-// a{
-//     // color: #ffa500!important;
-//     color: white!important;
-// }
+
+
+
+@media screen and (max-width: 534px) {
+    #main #about-us #descriptions {
+        width: 85%;
+        height: 190px;
+    }
+    #navbar li{
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width: 785px) {
+    footer{
+        #footer-text-container{
+            float: none;
+            width: 100%;
+            text-align: center;
+            margin: 0px;
+            #footer1, #footer2, #footer3{
+                margin: 0px 2.5% 0 2.5%;
+            }
+        }
+        #fonticon-container{
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+    }
+    #main #about-us #descriptions {
+        width: 75%;
+        height: 190px;
+    }
+    #navbar li{
+        padding: 0px 30px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 575px) {
+    footer{
+        #footer-text-container{
+            #footer3{
+                display:block;
+                background-color: #dcdcdc;
+                width: 100%;
+                margin: 0px;
+
+            }
+        }
+
+    }
+}
+
 
