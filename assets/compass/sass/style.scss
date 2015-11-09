@@ -127,78 +127,79 @@
     }   
 }
 
-
-#skills{
+#skills-wrapper{
     background: #f1f1f1;
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10%;
-    #progress-title{
-        font-weight: 300;
-        margin-bottom: 20px;
-    }
-    #something-sweet2{
-        background: white;
-        padding: 10px;
-        margin-bottom: 20px;
-        float: left;
-    }
-    #filler{
-        clear: both;
-    }
-    
-    .progress-bar-title{
-        margin-left: 10%;
-        width: 30%;
-        float: left;   
-        font-size: 12px; 
-    }
+    #skills{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+        width: 80%;
+        #progress-title{
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        #something-sweet2{
+            background: white;
+            padding: 10px;
+            margin-bottom: 20px;
+            float: left;
+        }
+        #filler{
+            clear: both;
+        }
+        
+        .progress-bar-title{
+            margin-left: 10%;
+            width: 40%;
+            float: left;   
+            font-size: 12px; 
+        }
 
-    .progress-bar-percent{
-        margin-right: 20%;
-        width: 30%;
-        text-align: right;
-        float: left;
-        font-size: 12px;
-    }
+        .progress-bar-percent{
+            margin-right: 10%;
+            width: 40%;
+            text-align: right;
+            float: left;
+            font-size: 12px;
+        }
 
-    #progress{
-        width: 60%;
-        margin-left: 10%;
-    }
-    .progress {
-        background: rgba(245, 245, 245, 1); 
-        border: 9px solid rgba(245, 245, 245, 1); 
-        border-radius: 4px; 
-        height: 20px;
-        .progress-bar{
-            background: orange;
+        #progress{
+            width: 80%;
+            margin-left: 10%;
         }
-        #bar1{
-            width: 0%;
-            transition: all 3s;
+        .progress {
+            background: rgba(245, 245, 245, 1); 
+            border: 9px solid rgba(245, 245, 245, 1); 
+            border-radius: 4px; 
+            height: 20px;
+            .progress-bar{
+                background: orange;
+            }
+            #bar1{
+                width: 0%;
+                transition: all 3s;
+            }
+            #bar2{
+                width: 0%;
+                transition: all 3s;
+            }
+            #bar3{
+                width: 0%;
+                transition: all 3s; 
+            }
+            #bar4{
+                width: 0%;
+                transition: all 3s;
+            }
+            #bar5{
+                width: 0%;
+                transition: all 3s;
+            }
         }
-        #bar2{
-            width: 0%;
-            transition: all 3s;
-        }
-        #bar3{
-            width: 0%;
-            transition: all 3s; 
-        }
-        #bar4{
-            width: 0%;
-            transition: all 3s;
-        }
-        #bar5{
-            width: 0%;
-            transition: all 3s;
-        }
-    }
 
+    }
 }
-
 
 .margin-adjust{
     margin-top: 60px;
@@ -352,16 +353,6 @@
 
 
 
-@media screen and (max-width: 534px) {
-    #main #about-us #descriptions {
-        width: 85%;
-        height: 190px;
-    }
-    #navbar li{
-        padding: 0px 15px;
-    }
-}
-
 @media screen and (max-width: 785px) {
     footer{
         #footer-text-container{
@@ -386,6 +377,25 @@
     #navbar li{
         padding: 0px 30px;
     }
+    #contact-me form #left{
+        width: 70%;
+        margin: auto;
+        float: none;
+    }
+    #contact-me form #right{
+        float: none;
+        margin: auto;
+        width: 70%;
+        .labels .form-control{
+            height: 120px;
+        }
+    }
+    #contact-me form button{
+        width: 70%;
+        margin-left: 15%;
+    }
+
+
     
     
 }
@@ -402,6 +412,35 @@
             }
         }
 
+    }
+    #contact-me form #left{
+        width: 80%;
+        margin: auto;
+        float: none;
+    }
+    #contact-me form #right{
+        float: none;
+        margin: auto;
+        width: 80%;
+        .labels .form-control{
+            height: 120px;
+        }
+    }
+    #contact-me form button{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+}
+
+
+@media screen and (max-width: 534px) {
+    #main #about-us #descriptions {
+        width: 85%;
+        height: 190px;
+    }
+    #navbar li{
+        padding: 0px 15px;
     }
 }
 
