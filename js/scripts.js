@@ -6,6 +6,10 @@ $(document).ready(function(){
     new WOW().init();
 
 
+	
+
+
+
 	$('.carousel').carousel({
 		interval: 5000
 	})
@@ -118,6 +122,11 @@ $(document).ready(function(){
 	// 	$(this).addClass('active');
 
 	// });
+	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+	var firstDate = new Date(1979,10,05);
+	var secondDate = new Date();
+	var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+	console.log(diffDays);
 
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > pageHeight){
@@ -125,9 +134,35 @@ $(document).ready(function(){
 			$('#bar2').css('width', '80%');
 			$('#bar3').css('width', '75%');
 			$('#bar4').css('width', '60%');
-			$('#bar5').css('width', '100%');
-
-			
+			$('#bar5').css('width', '98%');
+			$('#num1').numerator( {
+				easing: 'linear', // easing options.
+				duration: 2000, // the length of the animation.
+				delimiter: '',
+				rounding: 0, // decimal places.
+				toValue: 54 // animate to this value.
+			});
+			$('#num2').numerator( {
+				easing: 'linear', // easing options.
+				duration: 2000, // the length of the animation.
+				delimiter: '',
+				rounding: 0, // decimal places.
+				toValue: 25 // animate to this value.
+			});	
+			$('#num3').numerator( {
+				easing: 'linear', // easing options.
+				duration: 2000, // the length of the animation.
+				delimiter: '',
+				rounding: 0, // decimal places.
+				toValue: 50 // animate to this value.
+			});	
+			$('#num4').numerator( {
+				easing: 'linear', // easing options.
+				duration: 2000, // the length of the animation.
+				delimiter: '',
+				rounding: 0, // decimal places.
+				toValue: diffDays // animate to this value.
+			});			
 		}
 	});
 
