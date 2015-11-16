@@ -553,51 +553,56 @@ footer #fonticon-container .fonticon img:hover {
     display: none;
   }
 
-  /* line 528, ../compass/sass/style.scss */
+  /* line 529, ../compass/sass/style.scss */
+  .margin-adjust {
+    margin-top: 0px;
+  }
+
+  /* line 533, ../compass/sass/style.scss */
   .burger-menu {
     display: block;
   }
 
-  /* line 531, ../compass/sass/style.scss */
+  /* line 536, ../compass/sass/style.scss */
   #skills-wrapper #count-wrapper {
     height: 341px;
   }
-  /* line 533, ../compass/sass/style.scss */
+  /* line 538, ../compass/sass/style.scss */
   #skills-wrapper #count-wrapper .num1, #skills-wrapper #count-wrapper .num2, #skills-wrapper #count-wrapper .num3, #skills-wrapper #count-wrapper .num4 {
     width: 50%;
   }
 
-  /* line 537, ../compass/sass/style.scss */
+  /* line 542, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 70%;
     margin: auto;
     float: none;
   }
 
-  /* line 542, ../compass/sass/style.scss */
+  /* line 547, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 70%;
   }
-  /* line 546, ../compass/sass/style.scss */
+  /* line 551, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 550, ../compass/sass/style.scss */
+  /* line 555, ../compass/sass/style.scss */
   #contact-me form button {
     width: 70%;
     margin-left: 15%;
   }
 
-  /* line 555, ../compass/sass/style.scss */
+  /* line 560, ../compass/sass/style.scss */
   #pano-image #pano-text {
     top: 142px;
   }
 }
 @media screen and (max-width: 575px) {
-  /* line 570, ../compass/sass/style.scss */
+  /* line 575, ../compass/sass/style.scss */
   footer #footer-text-container #footer3 {
     display: block;
     background-color: #dcdcdc;
@@ -605,39 +610,39 @@ footer #fonticon-container .fonticon img:hover {
     margin: 0px;
   }
 
-  /* line 581, ../compass/sass/style.scss */
+  /* line 586, ../compass/sass/style.scss */
   #pano-image #pano-text {
     font-size: 16px;
     top: 151px;
     padding: 15px;
   }
 
-  /* line 589, ../compass/sass/style.scss */
+  /* line 594, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 80%;
     margin: auto;
     float: none;
   }
 
-  /* line 594, ../compass/sass/style.scss */
+  /* line 599, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 80%;
   }
-  /* line 598, ../compass/sass/style.scss */
+  /* line 603, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 602, ../compass/sass/style.scss */
+  /* line 607, ../compass/sass/style.scss */
   #contact-me form button {
     width: 80%;
     margin-left: 10%;
   }
 }
 @media screen and (max-width: 534px) {
-  /* line 611, ../compass/sass/style.scss */
+  /* line 616, ../compass/sass/style.scss */
   #main #about-us #descriptions {
     width: 85%;
     height: 190px;
