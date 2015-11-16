@@ -165,7 +165,16 @@ $(document).ready(function(){
 			});			
 		}
 	});
+	
+	//Hamburger hidden menu
+	$('.burger-menu').click(function(){
+		$('.sidebar').toggleClass('active');
+	})
 
+	$('.menu-nav').click(function(){
+		$('.sidebar').toggleClass('active');
+	})
+	
 
 	$('#contact-me-form').submit(function(){
 		if(contactMeForm.name.value.length < 4){

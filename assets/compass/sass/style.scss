@@ -44,6 +44,76 @@
     // display: none;  
 }
 
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1500;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(255,255,255, 0.9);
+    width: 100%;
+    transform: translateX(100%);
+    transition: .3s all ease;
+    padding-right: 40px;
+}
+
+.sidebar.active{
+    transform: translateX(0%);
+    .menu-nav{
+        text-align: center;
+        margin-top: 70px;
+        list-style: none;
+        li{
+            width: 100%;
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 32px;
+            letter-spacing: 4px;
+            line-height: 48px;
+            padding-top: 25px;
+            a{
+                 text-decoration: none;
+                 color: #555;
+            }
+            a:hover{
+                text-decoration: line-through;
+                color: orange;
+            }
+        }
+    }
+}
+
+
+.burger-menu{
+    position: fixed;
+    top:18px;
+    right: 30px;
+    z-index: 2000;
+    background: none;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    padding: 3px;
+    transition: .3s all ease .15s;
+    display: none;
+    .bar:first-child{
+        top: 0;
+    } 
+    .bar:nth-child(2){
+        top: 10px;
+    }
+    .bar:last-child{
+        bottom: 0;
+    }
+    .bar{
+        width: 100%;
+        height: 4px;
+        background: orange;
+        position: absolute;
+        left: 0;
+    }
+    
+}
 
 
 .line{
@@ -65,12 +135,22 @@
     padding-bottom: 60px;
     #about-us{
         font-weight: 300;
+        h2{
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 39px;
+            line-height: 43px;
+        }
         
         #something-sweet{
             background: #f1f1f1;
             display: inline-block;
             padding: 10px;
             margin-bottom: 20px;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            letter-spacing: 3px;
         }
         #photos{
             #cat, #stephen, #dog{
@@ -135,15 +215,21 @@
     #skills{
         padding-top: 60px;
         margin: auto;
-        width: 80%;
-        #progress-title{
-            font-weight: 300;
+        width: 80%;           
+        h2{
+            font-weight: 700;
             margin-bottom: 20px;
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 39px;
+            line-height: 43px;
         }
         #something-sweet2{
             background: white;
             padding: 10px;
             margin-bottom: 20px;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            letter-spacing: 3px;
             float: left;
         }
         #filler{
@@ -202,6 +288,7 @@
         text-align: center;
         padding-bottom: 20px;
         height: 200px;
+
         .num1, .num2, .num3, .num4,{
             // display: inline-block;
             float: left;
@@ -211,30 +298,23 @@
             font-weight: 400;
             font-size: 12px;
             letter-spacing: 2px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
             // height: 80px;
+
             #num1, #num2, #num3, #num4{
                 font-family: 'Raleway', sans-serif;
                 font-weight: 200;
                 font-size: 72px;
                 letter-spacing: -2px;
             }
-            .info{
-                // height: 50px;
+            .border{
+                float: left;
+                width: 80%;
+                margin: 10px 10% 0px 10%;
+                border: 1px solid orange;
             }
         }
-        // .num2{
-        //     display: inline-block;
-        //     width: 20%;
-        // }
-        // .num3{
-        //     display: inline-block;
-        //     width: 20%;
-        // }
-        // .num4{
-        //     display: inline-block;
-        //     width: 20%;
-        // }
+       
     }
 }
 
@@ -277,16 +357,21 @@
     padding: 20px 10% 0px 10%;
     overflow: hidden;
     margin-bottom: 80px;
-    #contact-title{
-        font-weight: 300;
+    h2{
+        font-weight: 700;
         margin-bottom: 20px;
-    }
-   
+        font-family: 'Inconsolata', sans-serif;
+        font-size: 39px;
+        line-height: 43px;
+    } 
     #something-sweet3{
         background: #f1f1f1;
         display: inline-block;
         padding: 10px;
         margin-bottom: 20px;
+        font-family: 'Inconsolata', sans-serif;
+        font-weight: 400;
+        letter-spacing: 3px;
     }
 
     form{
@@ -414,7 +499,7 @@
 
 
 
-@media screen and (max-width: 789px) {
+@media screen and (max-width: 800px) {
     footer{
         #footer-text-container{
             float: none;
@@ -434,8 +519,20 @@
     #main #about-us #descriptions {
         width: 75%;
     }
-    #navbar li{
-        padding: 0px 30px;
+    // #navbar li{
+    //     padding: 0px 30px;
+    // }
+    #navbar{
+        display: none;
+    }
+    .burger-menu{
+        display: block;
+    }
+    #skills-wrapper #count-wrapper { 
+        height: 341px;
+        .num1, .num2, .num3, .num4{
+             width: 50%;
+        }
     }
     #contact-me form #left{
         width: 70%;
@@ -515,9 +612,9 @@
         width: 85%;
         height: 190px;
     }
-    #navbar li{
-        padding: 0px 15px;
-    }
+    // #navbar li{
+    //     padding: 0px 15px;
+    // }
 }
 
 

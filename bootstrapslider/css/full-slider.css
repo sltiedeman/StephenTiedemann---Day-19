@@ -24,7 +24,7 @@ body {
 }
 
 .pageheading{
-    z-index: 100;
+    z-index: 80;
     /*color: #ec9400;*/
     color: white;
     width: 100%;
