@@ -111,8 +111,26 @@
         background: orange;
         position: absolute;
         left: 0;
-    }
+        transition: all .3s;
+    }   
     
+}
+
+.burger-menu.active{
+    transform-origin: center center;
+    transform: rotate(-180deg);
+     .bar:first-child{
+        top:50%;
+        transform: translateY(-50%);
+    } 
+    .bar:nth-child(2){
+        top: 10px;
+        transform: rotate(-180deg);
+    }
+    .bar:last-child{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
 }
 
 

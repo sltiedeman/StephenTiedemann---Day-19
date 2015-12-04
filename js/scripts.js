@@ -2,14 +2,10 @@
 
 $(document).ready(function(){
 	 
- 
+ 	//initialize wow plugin
     new WOW().init();
 
-
-	
-
-
-
+    //interval for opening page carousel
 	$('.carousel').carousel({
 		interval: 5000
 	})
@@ -21,7 +17,7 @@ $(document).ready(function(){
 		counter++;
 	},4000);
 	
-
+	//interval for text on carousel
 	setInterval(function(){
 		if(counter==1){
 			$('#name').fadeOut(1000);
@@ -49,7 +45,8 @@ $(document).ready(function(){
 	// 	$(this).addClass('active');
 
 	// });
-
+	
+	//creates navbar that populates after window has been scrolled
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > headerHeight){
 			mainNav.addClass(mainNavScroll);
@@ -68,6 +65,17 @@ $(document).ready(function(){
 		}
 	});
 
+	//For smaller screens a hamburger menu appears
+	$('.burger-menu').click(function(){
+		$('.sidebar').toggleClass('active');
+		$('.burger-menu').toggleClass('active');
+	})
+
+	$('.menu-nav').click(function(){
+		$('.sidebar').toggleClass('active');
+	})
+
+	//Descriptions included in the about section
 	insertHTML = "";
 	$('#cat').click(function(){
 		$('#click-for-description').fadeOut(500);
@@ -109,25 +117,13 @@ $(document).ready(function(){
 	})
 
 
-	// Code for animating progress bar on scroll----------
-
 	var mainNav2 = $('');
 	var mainNavScroll2 = 'navbar-scrolled';
 	var pageHeight = $('#myCarousel').height() + $('#navbar').height();
 	pageHeight += ($('#main').height())/2;
 
-
-	// $('#nav-bar li a').click(function(){
-	// 	$('.active').removeClass('active');
-	// 	$(this).addClass('active');
-
-	// });
-	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-	var firstDate = new Date(1979,10,05);
-	var secondDate = new Date();
-	var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
-	console.log(diffDays);
-
+	
+	// Code for animating progress bar on scroll----------
 	$(window).scroll(function(){
 		if( $(this).scrollTop() > pageHeight){
 			$('#bar1').css('width', '90%');
@@ -140,14 +136,14 @@ $(document).ready(function(){
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 54 // animate to this value.
+				toValue: 109 // animate to this value.
 			});
 			$('#num2').numerator( {
 				easing: 'linear', // easing options.
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 25 // animate to this value.
+				toValue: 38 // animate to this value.
 			});	
 			$('#num3').numerator( {
 				easing: 'linear', // easing options.
@@ -166,16 +162,15 @@ $(document).ready(function(){
 		}
 	});
 	
-	//Hamburger hidden menu
-	$('.burger-menu').click(function(){
-		$('.sidebar').toggleClass('active');
-	})
+	//calculate the number of days I have been alive
+	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+	var firstDate = new Date(1979,10,05);
+	var secondDate = new Date();
+	var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
 
-	$('.menu-nav').click(function(){
-		$('.sidebar').toggleClass('active');
-	})
 	
-
+	//contact form validation
+	//with time would like to possibly update this to use angular
 	$('#contact-me-form').submit(function(){
 		if(contactMeForm.name.value.length < 4){
 	        contactMeForm.message.focus();
@@ -197,11 +192,7 @@ $(document).ready(function(){
 	    	document.getElementById("message-error").innerHTML ="";
 	    }
 	    
-	});
-
-
-
-	
+	});	
 })
 
 
