@@ -5,6 +5,20 @@ $(document).ready(function(){
  	//initialize wow plugin
     new WOW().init();
 
+    //owl carousel
+
+    $("#owl-carousel").owlCarousel({
+ 
+      autoPlay: 2000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      loop: true,
+      autoplay: true
+ 
+ 	});
+
     //interval for opening page carousel
 	$('.carousel').carousel({
 		interval: 5000
