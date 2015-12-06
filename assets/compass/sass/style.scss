@@ -1,3 +1,22 @@
+h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 39px;
+    line-height: 43px;
+    color: #222;
+    text-transform: uppercase;
+}
+h3{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+//----------------Navbar styling-----------------
+
 #navbar{
     position: relative;
     background-color: #3c3c3c;
@@ -36,6 +55,7 @@
     color: #ffdb99!important;
 }
 
+//Keep navbar fixed once the main image has been scrolled past
 .navbar-scrolled{
     position: fixed!important;
     top: 0;
@@ -44,6 +64,13 @@
     // display: none;  
 }
 
+//margin adust for navbar once navbar is scrolled
+.margin-adjust{
+    margin-top: 60px;
+   
+}
+
+//For smaller screens a hamburger menu is present instead of a navbar
 .sidebar{
     position: fixed;
     top: 0;
@@ -138,13 +165,12 @@
         width: 70px;
         height: 2px;
         background-color:orange;
-        // background-color: #0d3973;
         margin-bottom: 20px;
         margin-top: -6px;
 
     }
 
-
+//about section
 #main{
     padding-left: 10%;
     padding-right: 10%;
@@ -153,14 +179,6 @@
     padding-bottom: 60px;
     #about-us{
         font-weight: 300;
-        h2{
-            font-weight: 700;
-            margin-bottom: 20px;
-            font-family: 'Inconsolata', sans-serif;
-            font-size: 39px;
-            line-height: 43px;
-        }
-        
         #something-sweet{
             background: #f1f1f1;
             display: inline-block;
@@ -227,21 +245,25 @@
     }   
 }
 
-#skills-wrapper{
+
+#portfolio-wrapper{
     background: #f1f1f1;
     width: 100%;
-    #skills{
+    padding-bottom: 60px;
+    // height: 300px;
+    #portfolio{
         padding-top: 60px;
+        width: 80%;
         margin: auto;
-        width: 80%;           
-        h2{
-            font-weight: 700;
+        background: #f1f1f1;
+        #line{
+            width: 70px;
+            height: 2px;
+            background-color:orange;
             margin-bottom: 20px;
-            font-family: 'Inconsolata', sans-serif;
-            font-size: 39px;
-            line-height: 43px;
+            margin-top: -6px;
         }
-        #something-sweet2{
+        #something-sweet4{
             background: white;
             padding: 10px;
             margin-bottom: 20px;
@@ -250,10 +272,71 @@
             letter-spacing: 3px;
             float: left;
         }
-        #filler{
-            clear: both;
+    }
+    #pictures{
+        width: 80%;
+        margin: auto;
+        .portfolio{
+            margin-top: 40px;
+            position: relative;
+            img{
+                width: 100%;
+                height: 310px;
+             }
+            .caption{
+                position: absolute;
+                top:15px;
+                right: 30px;
+                bottom: 15px;
+                left: 30px;
+                background: rgba(241,241,241, 0.92);
+                z-index:10;
+                filter: alpha(opacity = 0);
+                opacity: 0;
+                -webkit-transition: all .5s ease-in-out;
+                 -moz-transition: all .5s ease-in-out;
+                   -ms-transition: all .5s ease-in-out;
+                     -o-transition: all .5s ease-in-out;
+                         transition: all .5s ease-in-out;
+                .title{
+                    position: absolute;
+                    top: 50px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+            }
+        }
+        .portfolio:hover .caption{
+            filter: alpha(opacity=100);
+            opacity: 1;
         }
         
+    }
+}
+
+
+.filler{
+        clear: both;
+        }
+//skills section
+
+#skills-wrapper{
+    background: white;
+    #skills{
+        padding-top: 60px;
+        margin: auto;
+        width: 80%;           
+        #something-sweet2{
+            background: #f1f1f1;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            letter-spacing: 3px;
+            float: left;
+        }
+            
         .progress-bar-title{
             margin-left: 10%;
             width: 40%;
@@ -351,11 +434,8 @@
 
 }
 
-.margin-adjust{
-    margin-top: 60px;
-   
-}
 
+//pano image with quote styling
 #pano-image{
     background-image: url('../../img/iceland5.jpg');
     background-repeat: no-repeat;
@@ -383,6 +463,7 @@
     }
 }
 
+//contact us section styling
 #contact-me{
     margin-top: 40px;
     background: white;
@@ -390,13 +471,13 @@
     padding: 20px 10% 0px 10%;
     overflow: hidden;
     margin-bottom: 80px;
-    h2{
-        font-weight: 700;
-        margin-bottom: 20px;
-        font-family: 'Inconsolata', sans-serif;
-        font-size: 39px;
-        line-height: 43px;
-    } 
+    // h2{
+    //     font-weight: 700;
+    //     margin-bottom: 20px;
+    //     font-family: 'Inconsolata', sans-serif;
+    //     font-size: 39px;
+    //     line-height: 43px;
+    // } 
     #something-sweet3{
         background: #f1f1f1;
         display: inline-block;
@@ -492,6 +573,7 @@
 
 }
 
+//footer styling
  footer{
         height: 60px;
         background-color: #dcdcdc;
@@ -530,7 +612,7 @@
     }
 
 
-
+//media queries for different screen sizes
 
 @media screen and (max-width: 800px) {
     footer{
