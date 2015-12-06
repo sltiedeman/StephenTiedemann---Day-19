@@ -304,6 +304,26 @@ h3{
                     text-align: center;
                     width: 100%;
                 }
+                .horizontal-rule{
+                    width: 100%;
+                    position: absolute;
+                    top: 110px;
+                    .line{
+                        width: 80%;
+                        margin: auto;
+                    }
+                }
+                .description{
+                    position: absolute;
+                    top: 125px;
+                    text-align: left;
+                    width: 100%;
+                    .text-space{
+                        width: 80%;
+                        margin: auto;
+                        letter-spacing: 2px;
+                    }
+                }
 
             }
         }
