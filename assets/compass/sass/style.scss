@@ -12,7 +12,10 @@ h3{
     font-weight: 700;
     color: #222;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
 }
 
 //----------------Navbar styling-----------------
@@ -305,20 +308,22 @@ h3{
                 .horizontal-rule{
                     width: 100%;
                     position: absolute;
-                    top: 45%;
+                    top: 43%;
                     .line{
                         width: 80%;
-                        margin: auto;
+                        margin-left:10%;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
                     }
                 }
                 .description{
                     position: absolute;
                     top: 53%;
-                    text-align: left;
+                    text-align: center;
                     width: 100%;
                     .text-space{
                         width: 80%;
-                        margin: auto;
+                        margin-left: 10%;
                         letter-spacing: 2px;
                     }
                 }
