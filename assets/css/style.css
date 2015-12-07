@@ -323,7 +323,7 @@ h3 {
 /* line 299, ../compass/sass/style.scss */
 #portfolio-wrapper #pictures .portfolio .caption .title {
   position: absolute;
-  top: 20px;
+  top: 25%;
   text-align: center;
   width: 100%;
 }
@@ -331,7 +331,7 @@ h3 {
 #portfolio-wrapper #pictures .portfolio .caption .horizontal-rule {
   width: 100%;
   position: absolute;
-  top: 80px;
+  top: 45%;
 }
 /* line 309, ../compass/sass/style.scss */
 #portfolio-wrapper #pictures .portfolio .caption .horizontal-rule .line {
@@ -341,7 +341,7 @@ h3 {
 /* line 314, ../compass/sass/style.scss */
 #portfolio-wrapper #pictures .portfolio .caption .description {
   position: absolute;
-  top: 95px;
+  top: 53%;
   text-align: left;
   width: 100%;
 }

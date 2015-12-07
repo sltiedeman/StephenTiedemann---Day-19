@@ -298,14 +298,14 @@ h3{
                          transition: all .5s ease-in-out;
                 .title{
                     position: absolute;
-                    top: 20px;
+                    top: 25%;
                     text-align: center;
                     width: 100%;
                 }
                 .horizontal-rule{
                     width: 100%;
                     position: absolute;
-                    top: 80px;
+                    top: 45%;
                     .line{
                         width: 80%;
                         margin: auto;
@@ -313,7 +313,7 @@ h3{
                 }
                 .description{
                     position: absolute;
-                    top: 95px;
+                    top: 53%;
                     text-align: left;
                     width: 100%;
                     .text-space{
