@@ -702,46 +702,61 @@ footer #fonticon-container .fonticon img:hover {
     display: block;
   }
 
-  /* line 675, ../compass/sass/style.scss */
+  /* line 676, ../compass/sass/style.scss */
   #skills-wrapper #count-wrapper {
     height: 341px;
   }
-  /* line 677, ../compass/sass/style.scss */
+  /* line 678, ../compass/sass/style.scss */
   #skills-wrapper #count-wrapper .num1, #skills-wrapper #count-wrapper .num2, #skills-wrapper #count-wrapper .num3, #skills-wrapper #count-wrapper .num4 {
     width: 50%;
   }
 
-  /* line 681, ../compass/sass/style.scss */
+  /* line 682, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 70%;
     margin: auto;
     float: none;
   }
 
-  /* line 686, ../compass/sass/style.scss */
+  /* line 687, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 70%;
   }
-  /* line 690, ../compass/sass/style.scss */
+  /* line 691, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 694, ../compass/sass/style.scss */
+  /* line 695, ../compass/sass/style.scss */
   #contact-me form button {
     width: 70%;
     margin-left: 15%;
   }
 
-  /* line 699, ../compass/sass/style.scss */
+  /* line 700, ../compass/sass/style.scss */
   #pano-image #pano-text {
     top: 142px;
   }
 }
 @media screen and (max-width: 575px) {
   /* line 714, ../compass/sass/style.scss */
+  #portfolio-wrapper #pictures .portfolio .caption .title {
+    top: 5%;
+    font-size: 24px;
+  }
+  /* line 718, ../compass/sass/style.scss */
+  #portfolio-wrapper #pictures .portfolio .caption .horizontal-rule {
+    top: 25%;
+  }
+  /* line 721, ../compass/sass/style.scss */
+  #portfolio-wrapper #pictures .portfolio .caption .description {
+    top: 33%;
+    font-size: 10px;
+  }
+
+  /* line 729, ../compass/sass/style.scss */
   footer #footer-text-container #footer3 {
     display: block;
     background-color: #dcdcdc;
@@ -749,39 +764,39 @@ footer #fonticon-container .fonticon img:hover {
     margin: 0px;
   }
 
-  /* line 725, ../compass/sass/style.scss */
+  /* line 740, ../compass/sass/style.scss */
   #pano-image #pano-text {
     font-size: 16px;
     top: 151px;
     padding: 15px;
   }
 
-  /* line 733, ../compass/sass/style.scss */
+  /* line 748, ../compass/sass/style.scss */
   #contact-me form #left {
     width: 80%;
     margin: auto;
     float: none;
   }
 
-  /* line 738, ../compass/sass/style.scss */
+  /* line 753, ../compass/sass/style.scss */
   #contact-me form #right {
     float: none;
     margin: auto;
     width: 80%;
   }
-  /* line 742, ../compass/sass/style.scss */
+  /* line 757, ../compass/sass/style.scss */
   #contact-me form #right .labels .form-control {
     height: 120px;
   }
 
-  /* line 746, ../compass/sass/style.scss */
+  /* line 761, ../compass/sass/style.scss */
   #contact-me form button {
     width: 80%;
     margin-left: 10%;
   }
 }
 @media screen and (max-width: 534px) {
-  /* line 755, ../compass/sass/style.scss */
+  /* line 770, ../compass/sass/style.scss */
   #main #about-us #descriptions {
     width: 85%;
     height: 190px;

@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $("#owl-carousel").owlCarousel({
  
-      autoPlay: 2000, //Set AutoPlay to 3 seconds
+      autoPlay: 2000, //Set AutoPlay to 2 seconds
  
       items : 4,
       itemsDesktop : [1199,3],
@@ -53,12 +53,6 @@ $(document).ready(function(){
 	var mainNavScroll = 'navbar-scrolled';
 	var headerHeight = $('#myCarousel').height();
 
-
-	// $('#nav-bar li a').click(function(){
-	// 	$('.active').removeClass('active');
-	// 	$(this).addClass('active');
-
-	// });
 	
 	//creates navbar that populates after window has been scrolled
 	$(window).scroll(function(){
@@ -131,10 +125,12 @@ $(document).ready(function(){
 	})
 
 
+	//Calculates page height so that progress bars do not animate 
+	//until user reaches the right spot on the page
 	var mainNav2 = $('');
 	var mainNavScroll2 = 'navbar-scrolled';
-	var pageHeight = $('#myCarousel').height() + $('#navbar').height();
-	pageHeight += ($('#main').height())/2;
+	var pageHeight = $('#myCarousel').height() + $('#navbar').height() + $('#main').height();
+	pageHeight += ($('#portfolio-wrapper').height())/1.5;
 
 	
 	// Code for animating progress bar on scroll----------
