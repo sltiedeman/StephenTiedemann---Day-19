@@ -84,6 +84,7 @@ $(document).ready(function(){
 	})
 
 	//Descriptions included in the about section
+	//Each click adds a description to the page
 	insertHTML = "";
 	$('#cat').click(function(){
 		$('#click-for-description').fadeOut(500);
