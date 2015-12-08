@@ -125,6 +125,16 @@ $(document).ready(function(){
 
 	})
 
+	//spaces the caption height so text has equal padding on top and bottom
+	for(i=1; i<7;i++){
+		var caption = "#caption" + i;
+		var captionHeight = $(caption).height();
+		var captionContent = "#caption-content" + i;
+		var captionContentHeight = $(captionContent).height();
+
+		var paddingAdjust = parseInt((captionHeight - captionContentHeight)/2);
+		$(captionContent).css('padding-top', paddingAdjust + 'px');
+	}
 
 	//Calculates page height so that progress bars do not animate 
 	//until user reaches the right spot on the page
