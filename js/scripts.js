@@ -131,7 +131,7 @@ $(document).ready(function(){
 	var mainNav2 = $('');
 	var mainNavScroll2 = 'navbar-scrolled';
 	var pageHeight = $('#myCarousel').height() + $('#navbar').height() + $('#main').height();
-	pageHeight += ($('#portfolio-wrapper').height())/2;
+	pageHeight += $('#portfolio-wrapper').height();
 
 	
 	// Code for animating progress bar on scroll----------
