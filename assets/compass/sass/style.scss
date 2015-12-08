@@ -773,3 +773,63 @@ h3{
 }
 
 
+// ------------------RESUME PAGE----------------------
+
+#resume{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 400;
+}
+
+.red{
+    color: #ff0066;
+}
+.blue{
+    color: #80bfff;
+}
+.orange{
+    color: #e69600;
+}
+.purple{
+    // color: #80007f;
+    color: #8a00e6;
+}
+.yellow{
+    color: #e5e600;
+}
+.green{
+    color: #00e600;
+}
+
+#page-wrapper{
+    padding: 5%;
+    height: 100vh;
+    background: #1a1a1a;
+    color: white;
+    .indent{
+        padding-left: 30px;
+    }
+    #button-holder{
+        margin-top: 30px;
+        text-align: center;
+        button{
+            padding: 15px;
+            -webkit-animation-name: pulse;
+            -webkit-animation-duration: 3s;
+            -webkit-animation-iteration-count: infinite;
+            border-radius: 3px;
+            text-shadow: 0 0 3px rgba(255, 255, 255, .3);
+            border:1px solid #ff6b6b;
+            font-size: 20px;
+
+        }
+    }
+    @-webkit-keyframes pulse {
+        from { background-color: #ff1919;}
+        50% { background-color: #890000; }
+        to { background-color: #ff1919;}
+    }
+}
+
+

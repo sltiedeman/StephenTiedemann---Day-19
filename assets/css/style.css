@@ -798,3 +798,79 @@ footer #fonticon-container .fonticon img:hover {
     height: 190px;
   }
 }
+/* line 778, ../compass/sass/style.scss */
+#resume {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Inconsolata', sans-serif;
+  font-weight: 400;
+}
+
+/* line 785, ../compass/sass/style.scss */
+.red {
+  color: #ff0066;
+}
+
+/* line 788, ../compass/sass/style.scss */
+.blue {
+  color: #80bfff;
+}
+
+/* line 791, ../compass/sass/style.scss */
+.orange {
+  color: #e69600;
+}
+
+/* line 794, ../compass/sass/style.scss */
+.purple {
+  color: #8a00e6;
+}
+
+/* line 798, ../compass/sass/style.scss */
+.yellow {
+  color: #e5e600;
+}
+
+/* line 801, ../compass/sass/style.scss */
+.green {
+  color: #00e600;
+}
+
+/* line 805, ../compass/sass/style.scss */
+#page-wrapper {
+  padding: 5%;
+  height: 100vh;
+  background: #1a1a1a;
+  color: white;
+}
+/* line 810, ../compass/sass/style.scss */
+#page-wrapper .indent {
+  padding-left: 30px;
+}
+/* line 813, ../compass/sass/style.scss */
+#page-wrapper #button-holder {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 816, ../compass/sass/style.scss */
+#page-wrapper #button-holder button {
+  padding: 15px;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  border-radius: 3px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+  border: 1px solid #ff6b6b;
+  font-size: 20px;
+}
+@-webkit-keyframes pulse {
+  from {
+    background-color: #ff1919;
+  }
+  50% {
+    background-color: #890000;
+  }
+  to {
+    background-color: #ff1919;
+  }
+}
