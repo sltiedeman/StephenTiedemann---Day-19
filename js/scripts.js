@@ -136,7 +136,7 @@ $(document).ready(function(){
 			var paddingAdjust = parseInt((captionHeight - captionContentHeight)/2);
 			$(captionContent).css('padding-top', paddingAdjust + 'px');
 		}
-	},4000);
+	},2000);
 
 	//Calculates page height so that progress bars do not animate 
 	//until user reaches the right spot on the page
