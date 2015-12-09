@@ -81,6 +81,7 @@ $(document).ready(function(){
 
 	$('.menu-nav').click(function(){
 		$('.sidebar').toggleClass('active');
+		$('.burger-menu').toggleClass('active');
 	})
 
 	//Descriptions included in the about section
