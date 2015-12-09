@@ -61,8 +61,8 @@ $(document).ready(function(){
 			$('#main').addClass('margin-adjust');
 			var inserthtml ='<div id="nav-text"><ul><li class="active fade-text"><a href="#">Home</a></li>';
 			inserthtml+='<li class="fade-text"><a href="#about-us">About</a</li>';
-			inserthtml+='<li class="fade-text"><a href="#">Projects</a></li>';
-			inserthtml+='<li class="fade-text"><a href="#contact-me">Contact</a></li>';
+			inserthtml+='<li class="fade-text"><a href="#portfolio">Portfolio</a></li>';
+			inserthtml+='<li class="fade-text"><a href="resume.html">Resume</a></li>';
 			inserthtml+='</ul></div>';
 			$('.navbar-scrolled').html(inserthtml);
 			$('#navbar a').css('display', 'block');
