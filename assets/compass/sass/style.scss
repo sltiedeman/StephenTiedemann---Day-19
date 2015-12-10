@@ -284,51 +284,55 @@ h3{
             img{
                 width: 100%;
              }
-            .caption{
-                position: absolute;
-                top:15px;
-                right: 30px;
-                bottom: 15px;
-                left: 30px;
-                background: rgba(241,241,241, 0.92);
-                z-index:10;
-                filter: alpha(opacity = 0);
-                opacity: 0;
-                -webkit-transition: all .5s ease-in-out;
-                 -moz-transition: all .5s ease-in-out;
-                   -ms-transition: all .5s ease-in-out;
-                     -o-transition: all .5s ease-in-out;
-                         transition: all .5s ease-in-out;
-                .caption-content{
+            a{
+                text-decoration: none;
+                color: black;
+                .caption{
                     position: absolute;
-                    top: 0px;
-                    width: 100%;
-                    .title{            
-                        text-align: center;
+                    top:15px;
+                    right: 30px;
+                    bottom: 15px;
+                    left: 30px;
+                    background: rgba(241,241,241, 0.92);
+                    z-index:10;
+                    filter: alpha(opacity = 0);
+                    opacity: 0;
+                    -webkit-transition: all .5s ease-in-out;
+                     -moz-transition: all .5s ease-in-out;
+                       -ms-transition: all .5s ease-in-out;
+                         -o-transition: all .5s ease-in-out;
+                             transition: all .5s ease-in-out;
+                    .caption-content{
+                        position: absolute;
+                        top: 0px;
                         width: 100%;
-                    }
-                    .horizontal-rule{
-                        width: 100%;
-                        .line2{
-                            width: 80%;
-                            margin-left:10%;
-                            margin-top: 15px;
-                            margin-bottom: 15px;
-                            height: 2px;
-                            background: orange;
+                        .title{            
+                            text-align: center;
+                            width: 100%;
+                        }
+                        .horizontal-rule{
+                            width: 100%;
+                            .line2{
+                                width: 80%;
+                                margin-left:10%;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                                height: 2px;
+                                background: orange;
+                            }
+                        }
+                        .description{
+                            text-align: center;
+                            width: 100%;
+                            .text-space{
+                                width: 80%;
+                                margin-left: 10%;
+                                letter-spacing: 2px;
+                            }
                         }
                     }
-                    .description{
-                        text-align: center;
-                        width: 100%;
-                        .text-space{
-                            width: 80%;
-                            margin-left: 10%;
-                            letter-spacing: 2px;
-                        }
-                    }
-                }
 
+                }
             }
         }
         .portfolio:hover .caption{
