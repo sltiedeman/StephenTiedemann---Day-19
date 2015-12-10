@@ -127,6 +127,8 @@ $(document).ready(function(){
 	})
 
 	//spaces the caption height so text has equal padding on top and bottom
+	//uses a timer because sometimes heights were not initially available
+	//on page load
 	setTimeout(function(){
 		for(i=1; i<7;i++){
 			var caption = "#caption" + i;
