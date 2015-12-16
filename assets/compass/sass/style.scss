@@ -24,10 +24,14 @@ h3{
     z-index: 80;
     color: white;
     width: 100%;
-    top: 40%;
+    top: 30%;
     text-align: center;
     width: 80%;
     margin-left: 10%;
+    img{
+        zoom: 0.8;
+        padding-bottom: 10px;
+    }
     h1{
         font-family: 'Varela Round', sans-serif;
         letter-spacing: 8px;
@@ -39,10 +43,11 @@ h3{
     #web-developer{
         color: white;
         font-weight: 400;
-        text-shadow: 3px 1px 13px rgba(150, 150, 150, 1);
+        // text-shadow: 3px 1px 13px rgba(150, 150, 150, 1);
         margin: 0px;
         font-family: 'Open Sans Condensed', sans-serif;
-        font-size: 36px;
+        font-size: 32px;
+        letter-spacing: 8px;
     }
 }
 
