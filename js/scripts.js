@@ -130,7 +130,7 @@ $(document).ready(function(){
 	//uses a timer because sometimes heights were not initially available
 	//on page load
 	setTimeout(function(){
-		for(i=1; i<7;i++){
+		for(i=1; i<9;i++){
 			var caption = "#caption" + i;
 			var captionHeight = $(caption).height();
 			var captionContent = "#caption-content" + i;
