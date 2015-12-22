@@ -458,7 +458,7 @@
             REACH OUT AND TELL ME SOMETHING AWESOME
          </div>
 
-         <form id="contact-me-form" name="contactMeForm" action="MAILTO:sltiedeman@gmail.com" method="post" enctype="text/plain">
+         <form id="contact-me-form" name="contactMeForm" action="http://stephentiedemann.com/mail.php" method="post" enctype="text/plain">
             <div id="left">
                 <div class="form-group wow slideInUp" id="name-wrapper">
                     <label class="labels" for="names">
@@ -468,13 +468,13 @@
                 </div>
                 <div class="form-group wow slideInUp">
                     <label class="labels" for="email">
-                        <input type="email" class="form-control" placeholder="Email..." id="email">
+                        <input type="email" class="form-control" placeholder="Email..." id="email" name="email">
                         <span class="error" style="display: none;">Email Field Required</span>
                     </label>
                 </div>
                 <div class="form-group wow slideInUp">
                     <label class="labels" for="phone">
-                        <input type="tel" class="form-control" placeholder="Telephone..." id="phone">
+                        <input type="tel" class="form-control" placeholder="Telephone..." id="phone" name="phone">
                     </label>
                 </div>
                     
@@ -482,7 +482,7 @@
             <div id="right">
                 <div class="form-group wow slideInUp" id="message-wrapper">
                     <label class="labels" for="message" id="messageIN">
-                        <textarea name="message" class="form-control" id="message" placeholder="Message..."></textarea>
+                        <textarea name="message" class="form-control" id="message" placeholder="Message..." name="message"></textarea>
                         <span id="message-error" class="error-text"></span>
                     </label>
                 </div>
