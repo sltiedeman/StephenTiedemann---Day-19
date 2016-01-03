@@ -162,14 +162,14 @@ $(document).ready(function(){
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 206 // animate to this value.
+				toValue: 297 // animate to this value.
 			});
 			$('#num2').numerator( {
 				easing: 'linear', // easing options.
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 48 // animate to this value.
+				toValue: 51 // animate to this value.
 			});	
 			$('#num3').numerator( {
 				easing: 'linear', // easing options.
