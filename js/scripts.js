@@ -194,7 +194,7 @@ $(document).ready(function(){
 	var secondDate = new Date();
 	var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
 
-	
+
 	//contact form validation
 	//with time would like to possibly update this to use angular
 	$('#contact-me-form').submit(function(){
