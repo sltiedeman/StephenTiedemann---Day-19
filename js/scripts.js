@@ -16,9 +16,9 @@ $(window).load(function(){
 		if( $(this).scrollTop() > headerHeight){
 			mainNav.addClass(mainNavScroll);
 			$('#main').addClass('margin-adjust');
-			var inserthtml ='<div id="nav-text"><ul><li class="fade-text"><a class="heading-home" href="#">Home</a></li>';
-			inserthtml+='<li class="fade-text"><a class="heading-about" href="#about-us">About</a</li>';
-			inserthtml+='<li class="fade-text"><a class="heading-portfolio" href="#portfolio">Portfolio</a></li>';
+			var inserthtml ='<div id="nav-text"><ul><li class="fade-text page-scroll"><a class="heading-home" href="#myCarousel">Home</a></li>';
+			inserthtml+='<li class="fade-text page-scroll" id="temp"><a class="heading-about" href="#main">About</a></li>';
+			inserthtml+='<li class="fade-text page-scroll"><a class="heading-portfolio" href="#portfolio">Portfolio</a></li>';
 			inserthtml+='<li class="fade-text"><a href="resume.html">Resume</a></li>';
 			inserthtml+='</ul></div>';
 			$('.navbar-scrolled').html(inserthtml);
@@ -27,6 +27,7 @@ $(window).load(function(){
 			mainNav.removeClass(mainNavScroll);
 			$('#main').removeClass('margin-adjust');
 		}
+		initClick();
 	});
 
 
@@ -41,7 +42,20 @@ $(window).load(function(){
 			$('.heading-portfolio').toggleClass('active');
 		}
 	});
-})
+
+	
+
+
+	function initClick(){
+	    $('.page-scroll a').bind('click', function(){
+			console.log("it works");
+	        var $anchor=$(this);
+	        $('html,body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top},1000,'easeInOutCirc');
+	            event.preventDefault();
+	    });
+    };
+
+});
 
 $(document).ready(function(){
 	 
