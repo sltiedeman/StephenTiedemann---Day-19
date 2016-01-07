@@ -5,7 +5,7 @@ $(window).load(function(){
 	var mainNavScroll = 'navbar-scrolled';
 	var headerHeight = $('#myCarousel').height();
 	var aboutHeight = headerHeight;
-	var portfolioHeight = $('#myCarousel').height() + $('#about-us').height();
+	var portfolioHeight = $('#myCarousel').height() + $('#main').height();
 	var skillsHeight = portfolioHeight + $('#portfolio-wrapper').height();
 	console.log(aboutHeight);
 	console.log(portfolioHeight);
@@ -16,7 +16,7 @@ $(window).load(function(){
 		if( $(this).scrollTop() > headerHeight){
 			mainNav.addClass(mainNavScroll);
 			$('#main').addClass('margin-adjust');
-			var inserthtml ='<div id="nav-text"><ul><li class="active fade-text"><a href="#">Home</a></li>';
+			var inserthtml ='<div id="nav-text"><ul><li class="fade-text"><a class="heading-home" href="#">Home</a></li>';
 			inserthtml+='<li class="fade-text"><a class="heading-about" href="#about-us">About</a</li>';
 			inserthtml+='<li class="fade-text"><a class="heading-portfolio" href="#portfolio">Portfolio</a></li>';
 			inserthtml+='<li class="fade-text"><a href="resume.html">Resume</a></li>';
@@ -31,7 +31,11 @@ $(window).load(function(){
 
 
 	$(window).scroll(function(){
-		if(($(this).scrollTop() > aboutHeight) && ($(this).scrollTop() < portfolioHeight)){
+		if(($(this).scrollTop() >= 0) && ($(this).scrollTop() < aboutHeight)){
+			$('.heading-home').addClass('active');
+			$('.heading-about').removeClass('active');
+		}else if(($(this).scrollTop() >= aboutHeight) && ($(this).scrollTop() < portfolioHeight)){
+			$('.heading-home').removeClass('active');
 			$('.heading-about').toggleClass('active');
 		}else if(($(this).scrollTop() >= portfolioHeight) && ($(this).scrollTop() < skillsHeight)){
 			$('.heading-portfolio').toggleClass('active');
