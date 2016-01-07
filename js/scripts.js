@@ -52,7 +52,12 @@ $(document).ready(function(){
 	var mainNav = $('#navbar');
 	var mainNavScroll = 'navbar-scrolled';
 	var headerHeight = $('#myCarousel').height();
-
+	var aboutHeight = headerHeight;
+	var portfolioHeight = $('#myCarousel').height() + $('#about-us').height();
+	var skillsHeight = portfolioHeight + $('#portfolio-wrapper').height();
+	console.log(aboutHeight);
+	console.log(portfolioHeight);
+	console.log(skillsHeight);
 	
 	//creates navbar that populates after window has been scrolled
 	$(window).scroll(function(){
@@ -60,18 +65,27 @@ $(document).ready(function(){
 			mainNav.addClass(mainNavScroll);
 			$('#main').addClass('margin-adjust');
 			var inserthtml ='<div id="nav-text"><ul><li class="active fade-text"><a href="#">Home</a></li>';
-			inserthtml+='<li class="fade-text"><a href="#about-us">About</a</li>';
-			inserthtml+='<li class="fade-text"><a href="#portfolio">Portfolio</a></li>';
+			inserthtml+='<li class="fade-text"><a class="heading-about" href="#about-us">About</a</li>';
+			inserthtml+='<li class="fade-text"><a class="heading-portfolio" href="#portfolio">Portfolio</a></li>';
 			inserthtml+='<li class="fade-text"><a href="resume.html">Resume</a></li>';
 			inserthtml+='</ul></div>';
 			$('.navbar-scrolled').html(inserthtml);
 			$('#navbar a').css('display', 'block');
-
 		}else{
 			mainNav.removeClass(mainNavScroll);
 			$('#main').removeClass('margin-adjust');
 		}
 	});
+
+
+	$(window).scroll(function(){
+		if(($(this).scrollTop() > aboutHeight) && ($(this).scrollTop() < portfolioHeight)){
+			$('.heading-about').toggleClass('active');
+		}else if(($(this).scrollTop() >= portfolioHeight) && ($(this).scrollTop() < skillsHeight)){
+			$('.heading-portfolio').toggleClass('active');
+		}
+	});
+
 
 	//For smaller screens a hamburger menu appears
 	$('.burger-menu').click(function(){

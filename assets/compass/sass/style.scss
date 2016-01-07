@@ -86,9 +86,12 @@ h3{
     display: none;
     text-transform: uppercase;
     // transition: all 1s;
-    color: white!important;
+    color: white;
 }
 
+#navbar a.active{
+    color: orange;
+}
 
 #navbar a:hover{
     color: #ffdb99!important;
@@ -100,7 +103,7 @@ h3{
     top: 0;
     z-index: 200;
     padding-bottom: 12px;
-    // display: none;  
+    // display: none;
 }
 
 //margin adust for navbar once navbar is scrolled
