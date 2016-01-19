@@ -190,20 +190,21 @@ $(document).ready(function(){
 			$('#bar2').css('width', '80%');
 			$('#bar3').css('width', '70%');
 			$('#bar4').css('width', '60%');
-			$('#bar5').css('width', '98%');
+			$('#bar5').css('width', '70%');
+			$('#bar6').css('width', '98%');
 			$('#num1').numerator( {
 				easing: 'linear', // easing options.
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 297 // animate to this value.
+				toValue: 348 // animate to this value.
 			});
 			$('#num2').numerator( {
 				easing: 'linear', // easing options.
 				duration: 2000, // the length of the animation.
 				delimiter: '',
 				rounding: 0, // decimal places.
-				toValue: 51 // animate to this value.
+				toValue: 62 // animate to this value.
 			});	
 			$('#num3').numerator( {
 				easing: 'linear', // easing options.
